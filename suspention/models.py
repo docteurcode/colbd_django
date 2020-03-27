@@ -27,7 +27,7 @@ class SuspentionTemporary(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return str(self.user)
 
 
 class SuspentionPermanently(models.Model):
@@ -37,4 +37,4 @@ class SuspentionPermanently(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return str(self.user)
