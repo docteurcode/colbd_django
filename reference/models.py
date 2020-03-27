@@ -11,7 +11,7 @@ class FreeReference(models.Model):
     pn_number = models.IntegerField()
     bkash_num = models.IntegerField(blank=True)
     bkash_payment = models.BooleanField(default=False)
-    mobile_recharge = models.BooleanField(default=False)
+    mobile_recharge = models.BooleanField(default=True)
     num_of_ref = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
@@ -25,7 +25,7 @@ class Reference(models.Model):
     num_of_ref = models.IntegerField(default=0)
     bkash_num = models.IntegerField()
     bkash_payment = models.BooleanField(default=False)
-    mobile_recharge = models.BooleanField(default=False)
+    mobile_recharge = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
 
